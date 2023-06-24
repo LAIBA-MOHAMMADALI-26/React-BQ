@@ -1,14 +1,18 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
 // import NavDropdown from 'react-bootstrap/NavDropdown';
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
 import '../App.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import { useEffect } from 'react';
 
+=======
+import { Link } from 'react-router-dom'
+>>>>>>> d2ec3b7ea35434d5b11f1d40aaf4fb096352c092
 
 function AppBar() {
 
@@ -22,7 +26,7 @@ function AppBar() {
   },[])
   return (
     <>
-    {/* <Navbar>
+      {/* <Navbar>
      <Container>
         <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
         <Navbar.Toggle />
@@ -34,6 +38,7 @@ function AppBar() {
       </Container>
     </Navbar> */}
 
+<<<<<<< HEAD
 
 
 
@@ -61,6 +66,27 @@ function AppBar() {
     </Navbar>
 
 
+=======
+      <Navbar expand="lg" className="bg-body-tertiary">
+        <Container>
+          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ms-auto">
+              <Link className='nav-link' to="/">Home</Link>
+              <Link className='nav-link' to="/products">Products</Link>
+              {/* <Nav.Link ><Link to="/products" >CategoryPage</Link></Nav.Link> */}
+              <Link className="nav-linkms-4 btn btn-dark" to="/login">
+                Login
+              </Link>
+              <Link  className="nav-link btn btn-dark" to="/signup">
+                Sign Up
+              </Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+>>>>>>> d2ec3b7ea35434d5b11f1d40aaf4fb096352c092
     </>
   )
 }

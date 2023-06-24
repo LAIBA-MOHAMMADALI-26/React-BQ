@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 * {
   margin: 0;
@@ -10,11 +11,15 @@
 
 
 
+=======
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Montserrat:wght@600&family=Roboto+Condensed:wght@700&display=swap');
+>>>>>>> d2ec3b7ea35434d5b11f1d40aaf4fb096352c092
 .divider:after,
 .divider:before {
 content: "";
 flex: 1;
 height: 1px;
+<<<<<<< HEAD
 background: #eee;
 }
 
@@ -73,3 +78,13 @@ background: #eee;
   }
   
 
+=======
+
+
+}
+body{
+    background-color:lightblue;
+    /* background-color:yellow; */
+    font-family: 'Montserrat', sans-serif;
+}
+>>>>>>> d2ec3b7ea35434d5b11f1d40aaf4fb096352c092

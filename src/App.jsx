@@ -1,7 +1,6 @@
 import React from 'react'
 import  { Route, Routes, Navigate} from "react-router-dom";
 import Home from './Pages/Home';
-
 import Page404 from './Pages/Page404';
 import Login from './Pages/Login';
 import SignUp from './Pages/Signup';
@@ -10,6 +9,7 @@ import CategoryPage from './Pages/CategoryPage';
 import { useState } from 'react';
 import ProductPage from './Pages/ProductPage';
 import Products from './Pages/Products';
+import AppBar from './components/AppBar';
 // import HeaderSection from './Components/HeaderSection';
 // import FooterSection from './Components/FooterSection';
 
@@ -22,7 +22,7 @@ const [user, setUser] = useState(true)
 
   return (
 <>
-
+<AppBar/>
 
 {
   user ? (<Routes>
