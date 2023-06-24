@@ -20,12 +20,13 @@ axios.get(`https://dummyjson.com/products/categories`)
 
   return (
     <>
-    <div className="container">
+    <div className="container mb-5">
         <div className="my-5 text-center">
             <h1>
                 Categories
             </h1>
-            <p className="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequuntur deserunt illum aut quaerat sunt sapiente ab ea tenetur magnam laudantium iusto neque beatae qui quae dolorem nam minima esse, atque nihil vel enim omnis deleniti. Saepe veniam vero dolore eaque nam doloribus, quidem possimus a omnis sed nulla consectetur!</p>
+            <hr className='m-auto w-25 h-35 text-white mb-2' style={{ color : 'white' }} />
+            <p className="white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequuntur deserunt illum aut quaerat sunt sapiente ab ea tenetur magnam laudantium iusto neque beatae qui quae dolorem nam minima esse, atque nihil vel enim omnis deleniti. Saepe veniam vero dolore eaque nam doloribus, quidem possimus a omnis sed nulla consectetur!</p>
         </div>
 
         <div className="row">
@@ -35,7 +36,7 @@ categories.map((val, key) =>
 
     <div className="col-md-4 my-3" key={key}>
     <Link className='text-decoration-none' to={`/products/category/${val}`} >
-    <Card >
+    <Card className='bg-primary text-white ' >
 {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
 <Card.Body>
 <Card.Title>{key + 1} - {val.toUpperCase().replace('-', ' ')}</Card.Title>

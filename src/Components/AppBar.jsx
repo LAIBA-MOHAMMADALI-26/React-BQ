@@ -4,8 +4,22 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from "react-router-dom";
+import '../App.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
+
 
 function AppBar() {
+
+
+  useEffect(() => {
+    AOS.init({
+      offset: 300,
+      duration: 3000
+    });
+
+  },[])
   return (
     <>
     {/* <Navbar>
@@ -23,17 +37,22 @@ function AppBar() {
 
 
 
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg"  className='bg-dark text-white' >
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+    <Navbar.Brand href="#home" className='text-white animation' data-aos="fade-right" > AL SMART STORE <img
+              src="./assets/imges/img1.jpg"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+              // alt="React Bootstrap logo"
+            />
+</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link ><Link to="/" >Home</Link></Nav.Link>
-            <Nav.Link ><Link to="/products" >Products</Link></Nav.Link>
-            {/* <Nav.Link ><Link to="/products" >CategoryPage</Link></Nav.Link> */}
-            <Nav.Link ><Link className='ms-4 btn btn-dark' to="/login" >Login</Link></Nav.Link>
-            <Nav.Link ><Link className=' btn btn-dark' to="/signup" >Sign Up</Link></Nav.Link>
+          <Nav className="ms-auto animation" data-aos="fade-left">
+           
+            <Nav.Link ><Link className='ms-4 btn btn-primary' to="/login" >Login</Link></Nav.Link>
+            <Nav.Link ><Link className=' btn btn-primary' to="/signup" >Sign Up</Link></Nav.Link>
             
             
           </Nav>
